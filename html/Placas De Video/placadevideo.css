@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+    width: 100vw;
+}
+
+.contenedor-grid{
+    width: 100%;
+    height: 60rem;
+
+    /* padding: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 3rem;
+}
+
+/* HEADER */
+header{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.encabezado{
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.encabezado__titulo{
+    flex-basis: 34%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.encabezado__titulo__link{
+    flex-basis: 50%;
+}
+.encabezado__titulo__link__imagen{
+    width: 100%;
+}
+
+
+.form{
+    flex-basis: 33%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__buscador{
+    width: 90%;
+    height: 3rem;
+
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    border-radius: .5rem;
+    
+}
+
+
+.contenedor-boton{
+    flex-basis: 33%;
+    flex-grow: 1;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.boton-registrar{
+    width: 8rem;
+    height: 2rem;
+}
+.link-registrar{
+    text-decoration: none;
+} 
+
+
+.encabezado__barra-navegacion{
+    /* width: 100%; */
+    height: 3rem;
+    flex: 1;
+    align-self: auto;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+
+/* FIN HEADER */
+
+
+
+
+
+/* FOOTER */
+
+.contenedor-footer{
+    background-color: bisque;
+    padding: .8rem;
+
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.contenedor-footer__redsocial{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.contenedor-footer__redsocial__titulo{
+    color: #000;
+    text-align: center;
+}
+.contenedor-footer__redsocial__red-social{
+
+}
+.contenedor-footer__redsocial__red-social__link{
+    text-decoration: none;
+}
+.imagen-social{
+    width: 4rem;
+    height: 4rem;
+
+    filter:drop-shadow(1px 1px 6px red);
+}
+
+
+.contenedor-footer__horarios{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.contenedor-footer__horarios__titulo{
+    color: #000;
+    text-align: center;
+}
+.contenedor-footer__horarios__hora{
+    color: #000;
+}
+
+
+.contenedor-footer__mapa{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+}
+.contenedor-footer__mapa__titulo{
+    color: #000;
+    text-align: center;
+}
+.iframe{
+
+}
+
+/* FIN FOOTER */
